@@ -2,6 +2,11 @@
 name = "all-colors"
 version = "0.0.1"
 edition = "2021"
+license = "MIT"
+description = "Utility crate for getting color hex values."
+readme = "README.md"
+documentation = "https://docs.rs/all-colors"
+repository = "https://github.com/miketwenty1/all-colors/"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -52,16 +52,18 @@ fn come_up_with_color(color: &str) -> String {
         result = format!("{}{}{}", hex_part1, hex_part2, hex_part3);
     } else {
         // hash whatever we have then just return 6 hex chars for a color
+        println!("make sure we getting here ::{}::", color);
         let mut hasher = Sha256::new();
         hasher.update(color);
         let hresult = hasher.finalize();
-
+        println!("make sure we getting hresult ::{:#?}::", hresult);
         let hex_string: String = hresult
             .iter()
             .take(3) // Take the first 3 bytes (6 hex characters)
             .map(|byte| format!("{:02x}", byte))
             .collect();
 
+        println!("make sure we getting hex_string ::{}::", hex_string);
         result = hex_string;
     }
 
@@ -117,5 +119,10 @@ mod tests {
     fn test_longrandomstring() {
         let result = get_color_hex("give me something interesting");
         assert_eq!(result, "a4f662");
+    }
+    #[test]
+    fn test_empty() {
+        let result = get_color_hex("");
+        assert_eq!(result, "e3b0c4");
     }
 }

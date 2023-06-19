@@ -1,6 +1,6 @@
 [package]
 name = "all-colors"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 license = "MIT"
 description = "Utility crate for getting color hex values."
@@ -22,4 +22,3 @@ criterion = "0.5"
 [[bench]]
 name = "benchmark_colors"
 harness = false
-

@@ -3,8 +3,7 @@ use sha2::{Digest, Sha256};
 
 pub fn get_color_hex(color: &str) -> String {
     let color_key = sanitize_color_string(color);
-    let binding = colors::get_colors();
-    let color_lookedup = binding.get(color_key.as_str()).copied();
+    let color_lookedup = colors::COLORS.get(color_key.as_str()).copied();
 
     // if None see if we can do something clever to come up with a color
     match color_lookedup {

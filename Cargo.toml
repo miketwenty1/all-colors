@@ -12,3 +12,10 @@ repository = "https://github.com/miketwenty1/all-colors/"
 
 [dependencies]
 sha2 = "0.10"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "benchmark_colors"
+harness = false

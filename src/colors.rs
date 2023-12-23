@@ -24,6 +24,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("armygreen", "4b5320");
     sm.insert("arylideyellow", "e9d66b");
     sm.insert("ashgrey", "b2beb5");
+    sm.insert("ashgray", "b2beb5");
     sm.insert("asparagus", "87a96b");
     sm.insert("atomictangerine", "ff9966");
     sm.insert("auburn", "a52a2a");
@@ -39,6 +40,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("bananamania", "fae7b5");
     sm.insert("bananayellow", "ffe135");
     sm.insert("battleshipgrey", "848482");
+    sm.insert("battleshipgray", "848482");
     sm.insert("bazaar", "98777b");
     sm.insert("beaublue", "bcd4e6");
     sm.insert("beaver", "9f8170");
@@ -55,6 +57,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("blue", "0000ff");
     sm.insert("bluebell", "a2a2d0");
     sm.insert("bluegray", "6699cc");
+    sm.insert("bluegrey", "6699cc");
     sm.insert("bluegreen", "0d98ba");
     sm.insert("bluepurple", "8a2be2");
     sm.insert("blueviolet", "8a2be2");
@@ -97,6 +100,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("cadet", "536872");
     sm.insert("cadetblue", "5f9ea0");
     sm.insert("cadetgrey", "91a3b0");
+    sm.insert("cadetgray", "91a3b0");
     sm.insert("cadmiumgreen", "006b3c");
     sm.insert("cadmiumorange", "ed872d");
     sm.insert("cadmiumred", "e30022");
@@ -149,6 +153,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("columbiablue", "9bddff");
     sm.insert("coolblack", "002e63");
     sm.insert("coolgrey", "8c92ac");
+    sm.insert("coolgray", "8c92ac");
     sm.insert("copper", "b87333");
     sm.insert("copperrose", "996666");
     sm.insert("coquelicot", "ff3800");
@@ -181,6 +186,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("darkelectricblue", "536878");
     sm.insert("darkgoldenrod", "b8860b");
     sm.insert("darkgray", "a9a9a9");
+    sm.insert("darkgrey", "a9a9a9");
     sm.insert("darkgreen", "013220");
     sm.insert("darkjunglegreen", "1a2421");
     sm.insert("darkkhaki", "bdb76b");
@@ -206,6 +212,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("darksienna", "3c1414");
     sm.insert("darkslateblue", "483d8b");
     sm.insert("darkslategray", "2f4f4f");
+    sm.insert("darkslategrey", "2f4f4f");
     sm.insert("darkspringgreen", "177245");
     sm.insert("darktan", "918151");
     sm.insert("darktangerine", "ffa812");
@@ -213,7 +220,9 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("darkterracotta", "cc4e5c");
     sm.insert("darkturquoise", "00ced1");
     sm.insert("darkviolet", "9400d3");
+    sm.insert("darkyellow", "8B8000");
     sm.insert("dartmouthgreen", "00693e");
+    sm.insert("davygray", "555555");
     sm.insert("davygrey", "555555");
     sm.insert("debianred", "d70a53");
     sm.insert("deepcarmine", "a9203e");
@@ -235,6 +244,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("desert", "c19a6b");
     sm.insert("desertsand", "edc9af");
     sm.insert("dimgray", "696969");
+    sm.insert("dimgrey", "696969");
     sm.insert("dodgerblue", "1e90ff");
     sm.insert("dogwoodrose", "d71868");
     sm.insert("dollarbill", "85bb65");
@@ -302,7 +312,9 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("goldenrod", "daa520");
     sm.insert("grannysmithapple", "a8e4a0");
     sm.insert("gray", "808080");
+    sm.insert("grey", "808080");
     sm.insert("grayasparagus", "465945");
+    sm.insert("greyasparagus", "465945");
     sm.insert("green", "00ff00");
     sm.insert("greenblue", "1164b4");
     sm.insert("greenyellow", "adff2f");
@@ -355,6 +367,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("lavenderblue", "ccccff");
     sm.insert("lavenderblush", "fff0f5");
     sm.insert("lavendergray", "c4c3d0");
+    sm.insert("lavendergrey", "c4c3d0");
     sm.insert("lavenderindigo", "9457eb");
     sm.insert("lavendermagenta", "ee82ee");
     sm.insert("lavendermist", "e6e6fa");
@@ -378,6 +391,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("lightfuchsiapink", "f984ef");
     sm.insert("lightgoldenrodyellow", "fafad2");
     sm.insert("lightgray", "d3d3d3");
+    sm.insert("lightgrey", "d3d3d3");
     sm.insert("lightgreen", "90ee90");
     sm.insert("lightkhaki", "f0e68c");
     sm.insert("lightpastelpurple", "b19cd9");
@@ -387,6 +401,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("lightseagreen", "20b2aa");
     sm.insert("lightskyblue", "87cefa");
     sm.insert("lightslategray", "778899");
+    sm.insert("lightslategrey", "778899");
     sm.insert("lighttaupe", "b38b6d");
     sm.insert("lightyellow", "ffffed");
     sm.insert("lilac", "c8a2c8");
@@ -518,6 +533,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("pastelblue", "aec6cf");
     sm.insert("pastelbrown", "836953");
     sm.insert("pastelgray", "cfcfc4");
+    sm.insert("pastelgrey", "cfcfc4");
     sm.insert("pastelgreen", "77dd77");
     sm.insert("pastelmagenta", "f49ac2");
     sm.insert("pastelorange", "ffb347");
@@ -527,6 +543,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("pastelviolet", "cb99c9");
     sm.insert("pastelyellow", "fdfd96");
     sm.insert("patriarch", "800080");
+    sm.insert("paynegray", "536878");
     sm.insert("paynegrey", "536878");
     sm.insert("peach", "ffe5b4");
     sm.insert("peachpuff", "ffdab9");
@@ -647,6 +664,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("skymagenta", "cf71af");
     sm.insert("slateblue", "6a5acd");
     sm.insert("slategray", "708090");
+    sm.insert("slategrey", "708090");
     sm.insert("smalt", "003399");
     sm.insert("smokeytopaz", "933d41");
     sm.insert("smokyblack", "100c08");
@@ -668,6 +686,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("tangerineyellow", "ffcc00");
     sm.insert("taupe", "483c32");
     sm.insert("taupegray", "8b8589");
+    sm.insert("taupegrey", "8b8589");
     sm.insert("tawny", "cd5700");
     sm.insert("teagreen", "d0f0c0");
     sm.insert("tearose", "f4c2c2");
@@ -687,6 +706,7 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("topaz", "ffc87c");
     sm.insert("tractorred", "fd0e35");
     sm.insert("trolleygrey", "808080");
+    sm.insert("trolleygray", "808080");
     sm.insert("tropicalrainforest", "00755e");
     sm.insert("trueblue", "0073cf");
     sm.insert("tuftsblue", "417dc1");

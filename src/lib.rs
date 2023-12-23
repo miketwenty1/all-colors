@@ -1,5 +1,6 @@
 pub mod colors;
 use sha2::{Digest, Sha256};
+use std::fmt::Write;
 
 pub fn get_color_hex(color: &str) -> String {
     let color_key = sanitize_color_string(color);
@@ -54,11 +55,19 @@ fn come_up_with_color(color: &str) -> String {
         let mut hasher = Sha256::new();
         hasher.update(color);
         let hresult = hasher.finalize();
+        // let hex_string: String = hresult
+        //     .iter()
+        //     .take(3) // Take the first 3 bytes (6 hex characters)
+        //     .map(|byte| format!("{:02x}", byte))
+        //     .collect();
         let hex_string: String = hresult
             .iter()
             .take(3) // Take the first 3 bytes (6 hex characters)
-            .map(|byte| format!("{:02x}", byte))
-            .collect();
+            .fold(String::new(), |mut acc, byte| {
+                // Use write! to append formatted text directly to the string
+                write!(acc, "{:02x}", byte).expect("Can't write to string");
+                acc // Return the accumulator for the next fold iteration
+            });
         result = hex_string;
     }
 

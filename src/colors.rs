@@ -54,7 +54,6 @@ pub static COLORS: Lazy<stack_map::StackMap<&'static str, &'static str, 1024>> =
     sm.insert("bleudefrance", "318ce7");
     sm.insert("blizzardblue", "ace5ee");
     sm.insert("blond", "faf0be");
-    sm.insert("blood", "880808");
     sm.insert("blue", "0000ff");
     sm.insert("bluebell", "a2a2d0");
     sm.insert("bluegray", "6699cc");
